@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E67AE1E1FA1B57C00838A35 /* greenPyramind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */; };
+		4E75CF971F9F1CE9006D9BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */; };
+		4E75CF9E1F9F1CE9006D9BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */; };
+		4E75CFA01F9F1CEA006D9BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */; };
+		4E75CFA31F9F1CEA006D9BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */; };
+		4E75CFAD1F9F5C04006D9BA5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */; };
+		4E7D39781FA060CC00B3E01B /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7D39771FA060CC00B3E01B /* GameController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPyramind.png; sourceTree = "<group>"; };
+		4E75CF931F9F1CE9006D9BA5 /* Pyramids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyramids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E75CF9D1F9F1CE9006D9BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E75CFA21F9F1CEA006D9BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E75CFA41F9F1CEA006D9BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4E7D39771FA060CC00B3E01B /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E75CF901F9F1CE9006D9BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E75CF8A1F9F1CE9006D9BA5 = {
+			isa = PBXGroup;
+			children = (
+				4E75CF951F9F1CE9006D9BA5 /* Pyramids */,
+				4E75CF941F9F1CE9006D9BA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E75CF941F9F1CE9006D9BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E75CF931F9F1CE9006D9BA5 /* Pyramids.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E75CF951F9F1CE9006D9BA5 /* Pyramids */ = {
+			isa = PBXGroup;
+			children = (
+				4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */,
+				4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */,
+				4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */,
+				4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */,
+				4E75CFA41F9F1CEA006D9BA5 /* Info.plist */,
+				4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */,
+				4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */,
+				4E7D39771FA060CC00B3E01B /* GameController.swift */,
+			);
+			path = Pyramids;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E75CF921F9F1CE9006D9BA5 /* Pyramids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E75CFA71F9F1CEA006D9BA5 /* Build configuration list for PBXNativeTarget "Pyramids" */;
+			buildPhases = (
+				4E75CF8F1F9F1CE9006D9BA5 /* Sources */,
+				4E75CF901F9F1CE9006D9BA5 /* Frameworks */,
+				4E75CF911F9F1CE9006D9BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pyramids;
+			productName = Pyramids;
+			productReference = 4E75CF931F9F1CE9006D9BA5 /* Pyramids.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E75CF8B1F9F1CE9006D9BA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Naheed Shamim";
+				TargetAttributes = {
+					4E75CF921F9F1CE9006D9BA5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3F82UBS8CB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4E75CF8E1F9F1CE9006D9BA5 /* Build configuration list for PBXProject "Pyramids" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E75CF8A1F9F1CE9006D9BA5;
+			productRefGroup = 4E75CF941F9F1CE9006D9BA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E75CF921F9F1CE9006D9BA5 /* Pyramids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E75CF911F9F1CE9006D9BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E75CFA31F9F1CEA006D9BA5 /* LaunchScreen.storyboard in Resources */,
+				4E67AE1E1FA1B57C00838A35 /* greenPyramind.png in Resources */,
+				4E75CFA01F9F1CEA006D9BA5 /* Assets.xcassets in Resources */,
+				4E75CF9E1F9F1CE9006D9BA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E75CF8F1F9F1CE9006D9BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E75CFAD1F9F5C04006D9BA5 /* MainViewController.swift in Sources */,
+				4E7D39781FA060CC00B3E01B /* GameController.swift in Sources */,
+				4E75CF971F9F1CE9006D9BA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E75CF9D1F9F1CE9006D9BA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E75CFA21F9F1CEA006D9BA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E75CFA51F9F1CEA006D9BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E75CFA61F9F1CEA006D9BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E75CFA81F9F1CEA006D9BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3F82UBS8CB;
+				INFOPLIST_FILE = Pyramids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naheed.Pyramids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4E75CFA91F9F1CEA006D9BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3F82UBS8CB;
+				INFOPLIST_FILE = Pyramids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naheed.Pyramids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E75CF8E1F9F1CE9006D9BA5 /* Build configuration list for PBXProject "Pyramids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E75CFA51F9F1CEA006D9BA5 /* Debug */,
+				4E75CFA61F9F1CEA006D9BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E75CFA71F9F1CEA006D9BA5 /* Build configuration list for PBXNativeTarget "Pyramids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E75CFA81F9F1CEA006D9BA5 /* Debug */,
+				4E75CFA91F9F1CEA006D9BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E75CF8B1F9F1CE9006D9BA5 /* Project object */;
+}
