@@ -13,8 +13,8 @@ protocol GameScoreDelegate : class {
     func updateScore(score:Int)
 }
 
-class GameController: SCNView,SCNSceneRendererDelegate {
-    
+class GameController: SCNView,SCNSceneRendererDelegate
+{    
     var gameView:SCNView!
     var gameScene:SCNScene!
     var cameraNode:SCNNode!
@@ -26,18 +26,23 @@ class GameController: SCNView,SCNSceneRendererDelegate {
     
     weak var scoreDelegate : GameScoreDelegate?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupGame()
-    }
+//    override init(frame: CGRect)
+//    {
+//        super.init(frame: frame,
+//                   options: nil)
+//        setupGame()
+//    }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder)
+    {
         super.init(coder: aDecoder)
         setupGame()
     }
     
-    init() {
-        super.init(frame: CGRect(x: 0, y: 10, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height),options: nil)
+    init()
+    {
+        super.init(frame: CGRect(x: 0, y: hudHieght, width: screenWidth, height: screenHeight),
+                   options: nil)
             setupGame()
     }
     
@@ -50,7 +55,7 @@ class GameController: SCNView,SCNSceneRendererDelegate {
     
     func initView()
     {
-        gameView = self
+        gameView = self 
         gameView.backgroundColor = UIColor.black
         gameView.allowsCameraControl = true
         gameView.autoenablesDefaultLighting = true
@@ -67,8 +72,7 @@ class GameController: SCNView,SCNSceneRendererDelegate {
     
     func initCamera() {
         cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        
+        cameraNode.camera = SCNCamera()        
         cameraNode.position = SCNVector3(x: 0, y:5, z: 10)
         
         gameScene.rootNode.addChildNode(cameraNode)

@@ -7,25 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E67AE1E1FA1B57C00838A35 /* greenPyramind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */; };
-		4E75CF971F9F1CE9006D9BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */; };
-		4E75CF9E1F9F1CE9006D9BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */; };
+		4E67AE2A1FA1DBBB00838A35 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE211FA1DBBB00838A35 /* GameController.swift */; };
+		4E67AE2C1FA1DBBB00838A35 /* greenPyramind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE251FA1DBBB00838A35 /* greenPyramind.png */; };
+		4E67AE2D1FA1DBBB00838A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */; };
+		4E67AE2E1FA1DBBB00838A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE281FA1DBBB00838A35 /* Main.storyboard */; };
+		4E67AE301FA1DC5900838A35 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE2F1FA1DC5900838A35 /* Info.plist */; };
+		4E67AE381FA1F2A500838A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE341FA1F2A500838A35 /* AppDelegate.swift */; };
+		4E67AE391FA1F2A500838A35 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE351FA1F2A500838A35 /* Config.swift */; };
+		4E67AE3D1FA1F2D800838A35 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */; };
 		4E75CFA01F9F1CEA006D9BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */; };
-		4E75CFA31F9F1CEA006D9BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */; };
-		4E75CFAD1F9F5C04006D9BA5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */; };
-		4E7D39781FA060CC00B3E01B /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7D39771FA060CC00B3E01B /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPyramind.png; sourceTree = "<group>"; };
+		4E67AE211FA1DBBB00838A35 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		4E67AE251FA1DBBB00838A35 /* greenPyramind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPyramind.png; sourceTree = "<group>"; };
+		4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E67AE281FA1DBBB00838A35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4E67AE2F1FA1DC5900838A35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E67AE341FA1F2A500838A35 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E67AE351FA1F2A500838A35 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E75CF931F9F1CE9006D9BA5 /* Pyramids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyramids.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E75CF9D1F9F1CE9006D9BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4E75CFA21F9F1CEA006D9BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4E75CFA41F9F1CEA006D9BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		4E7D39771FA060CC00B3E01B /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E67AE1F1FA1DBBB00838A35 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE3B1FA1F2D800838A35 /* ViewController */,
+				4E67AE331FA1F2A500838A35 /* App */,
+				4E67AE211FA1DBBB00838A35 /* GameController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4E67AE231FA1DBBB00838A35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE2F1FA1DC5900838A35 /* Info.plist */,
+				4E67AE241FA1DBBB00838A35 /* Images */,
+				4E67AE261FA1DBBB00838A35 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E67AE241FA1DBBB00838A35 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE251FA1DBBB00838A35 /* greenPyramind.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4E67AE261FA1DBBB00838A35 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */,
+				4E67AE281FA1DBBB00838A35 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4E67AE331FA1F2A500838A35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE341FA1F2A500838A35 /* AppDelegate.swift */,
+				4E67AE351FA1F2A500838A35 /* Config.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E67AE3B1FA1F2D800838A35 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		4E75CF8A1F9F1CE9006D9BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +115,9 @@
 		4E75CF951F9F1CE9006D9BA5 /* Pyramids */ = {
 			isa = PBXGroup;
 			children = (
-				4E75CF961F9F1CE9006D9BA5 /* AppDelegate.swift */,
-				4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */,
+				4E67AE1F1FA1DBBB00838A35 /* Classes */,
+				4E67AE231FA1DBBB00838A35 /* Resources */,
 				4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */,
-				4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */,
-				4E75CFA41F9F1CEA006D9BA5 /* Info.plist */,
-				4E75CFAC1F9F5C04006D9BA5 /* MainViewController.swift */,
-				4E67AE1D1FA1B57C00838A35 /* greenPyramind.png */,
-				4E7D39771FA060CC00B3E01B /* GameController.swift */,
 			);
 			path = Pyramids;
 			sourceTree = "<group>";
@@ -130,10 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E75CFA31F9F1CEA006D9BA5 /* LaunchScreen.storyboard in Resources */,
-				4E67AE1E1FA1B57C00838A35 /* greenPyramind.png in Resources */,
+				4E67AE2D1FA1DBBB00838A35 /* LaunchScreen.storyboard in Resources */,
 				4E75CFA01F9F1CEA006D9BA5 /* Assets.xcassets in Resources */,
-				4E75CF9E1F9F1CE9006D9BA5 /* Main.storyboard in Resources */,
+				4E67AE2C1FA1DBBB00838A35 /* greenPyramind.png in Resources */,
+				4E67AE301FA1DC5900838A35 /* Info.plist in Resources */,
+				4E67AE2E1FA1DBBB00838A35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,32 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E75CFAD1F9F5C04006D9BA5 /* MainViewController.swift in Sources */,
-				4E7D39781FA060CC00B3E01B /* GameController.swift in Sources */,
-				4E75CF971F9F1CE9006D9BA5 /* AppDelegate.swift in Sources */,
+				4E67AE381FA1F2A500838A35 /* AppDelegate.swift in Sources */,
+				4E67AE2A1FA1DBBB00838A35 /* GameController.swift in Sources */,
+				4E67AE391FA1F2A500838A35 /* Config.swift in Sources */,
+				4E67AE3D1FA1F2D800838A35 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4E75CF9C1F9F1CE9006D9BA5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E75CF9D1F9F1CE9006D9BA5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4E75CFA11F9F1CEA006D9BA5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E75CFA21F9F1CEA006D9BA5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4E75CFA51F9F1CEA006D9BA5 /* Debug */ = {
@@ -270,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3F82UBS8CB;
-				INFOPLIST_FILE = Pyramids/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pyramids/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naheed.Pyramids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3F82UBS8CB;
-				INFOPLIST_FILE = Pyramids/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pyramids/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naheed.Pyramids;
 				PRODUCT_NAME = "$(TARGET_NAME)";

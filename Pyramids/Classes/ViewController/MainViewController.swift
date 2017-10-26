@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import SceneKit
 
 class MainViewController: UIViewController, GameScoreDelegate {
    
     @IBOutlet weak var scoreLbl: UILabel!
-    @IBOutlet weak var mGameView: GameController!    
+    @IBOutlet weak var mGameView: GameController!
+    
+//    @IBOutlet weak var gameView: UIView!
+    var gameController:GameController! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         mGameView.scoreDelegate = self
     }
     
@@ -26,13 +31,13 @@ class MainViewController: UIViewController, GameScoreDelegate {
         return true
     }
     
-    @IBAction func closeGameAction(_ sender: Any) {
+    @IBAction func closeGameAction(_ sender: Any)
+    {
         self.dismiss(animated: true, completion: nil)
-//        mGameView.pauseGame()
     }
-    
    
     @IBAction func pauseAction(_ sender: Any) {
+//        gameController.pauseGame()
         mGameView.pauseGame()
     }
     
