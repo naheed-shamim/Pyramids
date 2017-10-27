@@ -1,8 +1,8 @@
 //
-//  GameController.swift
+//  GameView.swift
 //  Pyramids
 //
-//  Created by Naheed Shamim on 25/10/17.
+//  Created by Naheed Shamim on 27/10/17.
 //  Copyright © 2017 Naheed Shamim. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ protocol GameScoreDelegate : class {
     func updateScore(score:Int)
 }
 
-class GameController: SCNView,SCNSceneRendererDelegate
+class GameView: SCNView,SCNSceneRendererDelegate
 {
     var gameView:SCNView!
     var gameScene:SCNScene!
@@ -57,7 +57,7 @@ class GameController: SCNView,SCNSceneRendererDelegate
     {
         gameView = self
         gameView.backgroundColor = UIColor.black
-        gameView.allowsCameraControl = true
+//        gameView.allowsCameraControl = true
         gameView.autoenablesDefaultLighting = true
         
         gameView.delegate = self
@@ -83,17 +83,33 @@ class GameController: SCNView,SCNSceneRendererDelegate
         levelPoints = level
     }
     
+    func getGeometry() -> Array<SCNGeometry>
+    {
+        var geometryArray : Array<SCNGeometry> = []
+        geometryArray.append(SCNPyramid(width: 1, height: 1, length: 1))
+//        geometryArray.append(SCNSphere(radius: 0.5))
+        geometryArray.append(SCNCone(topRadius: 0, bottomRadius: 0.5, height: 1))
+        
+        geometryArray.append(SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0))
+        
+        return geometryArray
+    }
+    
     func createTarget() {
         
-        let geometry:SCNGeometry = SCNPyramid(width: 1, height: 1, length: 1)
+//        let geometry:SCNGeometry = SCNPyramid(width: 1, height: 1, length: 1)
+        
+        let randomIndex:Int = Int(arc4random_uniform(UInt32(getGeometry().count)))
+        let randomGeometry = getGeometry()[randomIndex]
+        
         
         let randomColor = arc4random_uniform(2) == 0 ? UIColor.green : UIColor.red
-        geometry.materials.first?.diffuse.contents = randomColor
+        randomGeometry.materials.first?.diffuse.contents = randomColor
         
-        let geometryNode = SCNNode(geometry: geometry)
+        let geometryNode = SCNNode(geometry: randomGeometry)
         geometryNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         
-        if randomColor == UIColor.green
+        if randomColor == UIColor.green //&& randomGeometry.isKind(of: SCNPyramid())
         {
             geometryNode.name = "friend"
         }
@@ -109,6 +125,8 @@ class GameController: SCNView,SCNSceneRendererDelegate
         
         geometryNode.physicsBody?.applyForce(force, at: SCNVector3(x: 0.05, y: 0.05, z: 0.05), asImpulse: true)
     }
+    
+    
     
     func pauseGame()
     {
@@ -149,20 +167,21 @@ class GameController: SCNView,SCNSceneRendererDelegate
         if let hitObject = hitList.first {
             let node = hitObject.node
             
-            if node.name == "friend" {
-                
+            if node.name == "friend"
+            {
+                score = score + levelPoints
                 node.removeFromParentNode()
                 self.gameView.backgroundColor = UIColor.black
             }
             else
             {
+                score = score - levelPoints
                 levelPoints = -1 * levelPoints
                 
                 node.removeFromParentNode()
                 self.gameView.backgroundColor = UIColor.red
             }
             
-            score = score + levelPoints
             print("\(score)")
             
             DispatchQueue.main.async {
@@ -177,7 +196,7 @@ class GameController: SCNView,SCNSceneRendererDelegate
                 
                 if node.name == "friend"
                 {
-                    score = score - levelPoints
+                    score = score - abs(levelPoints)
                     print("\(score)")
                     DispatchQueue.main.async {
                         self.scoreDelegate?.updateScore(score: self.score)

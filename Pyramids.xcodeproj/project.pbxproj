@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E67AE2A1FA1DBBB00838A35 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE211FA1DBBB00838A35 /* GameController.swift */; };
 		4E67AE2C1FA1DBBB00838A35 /* greenPyramind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE251FA1DBBB00838A35 /* greenPyramind.png */; };
 		4E67AE2D1FA1DBBB00838A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */; };
 		4E67AE2E1FA1DBBB00838A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE281FA1DBBB00838A35 /* Main.storyboard */; };
@@ -15,11 +14,11 @@
 		4E67AE381FA1F2A500838A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE341FA1F2A500838A35 /* AppDelegate.swift */; };
 		4E67AE391FA1F2A500838A35 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE351FA1F2A500838A35 /* Config.swift */; };
 		4E67AE3D1FA1F2D800838A35 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */; };
+		4E7102C71FA30D8E00FE0CE9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7102C61FA30D8E00FE0CE9 /* GameView.swift */; };
 		4E75CFA01F9F1CEA006D9BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E67AE211FA1DBBB00838A35 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		4E67AE251FA1DBBB00838A35 /* greenPyramind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPyramind.png; sourceTree = "<group>"; };
 		4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E67AE281FA1DBBB00838A35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -27,6 +26,7 @@
 		4E67AE341FA1F2A500838A35 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E67AE351FA1F2A500838A35 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4E7102C61FA30D8E00FE0CE9 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		4E75CF931F9F1CE9006D9BA5 /* Pyramids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyramids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E75CF9F1F9F1CEA006D9BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +47,7 @@
 			children = (
 				4E67AE3B1FA1F2D800838A35 /* ViewController */,
 				4E67AE331FA1F2A500838A35 /* App */,
-				4E67AE211FA1DBBB00838A35 /* GameController.swift */,
+				4E7102C61FA30D8E00FE0CE9 /* GameView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -198,9 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E67AE381FA1F2A500838A35 /* AppDelegate.swift in Sources */,
-				4E67AE2A1FA1DBBB00838A35 /* GameController.swift in Sources */,
 				4E67AE391FA1F2A500838A35 /* Config.swift in Sources */,
 				4E67AE3D1FA1F2D800838A35 /* MainViewController.swift in Sources */,
+				4E7102C71FA30D8E00FE0CE9 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
