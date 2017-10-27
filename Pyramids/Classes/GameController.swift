@@ -20,7 +20,7 @@ class GameController: SCNView,SCNSceneRendererDelegate
     var cameraNode:SCNNode!
     var targetCreationTime:TimeInterval = 0
     
-    var levelPoints = 0
+    var levelPoints = 1
     var score = 0
     var isGamePaused : Bool = false
     
@@ -55,7 +55,7 @@ class GameController: SCNView,SCNSceneRendererDelegate
     
     func initView()
     {
-        gameView = self 
+        gameView = self
         gameView.backgroundColor = UIColor.black
         gameView.allowsCameraControl = true
         gameView.autoenablesDefaultLighting = true
@@ -156,13 +156,30 @@ class GameController: SCNView,SCNSceneRendererDelegate
             
             score = score + levelPoints
             print("\(score)")
-            scoreDelegate?.updateScore(score: score)
+            
+            DispatchQueue.main.async {
+                self.scoreDelegate?.updateScore(score: self.score)
+                
+            }
         }
     }
     
     func cleanUp () {
         for node in gameScene.rootNode.childNodes {
             if node.presentation.position.y < -1 {
+                
+                if node.name == "friend"
+                {
+                    score = score - levelPoints
+                    print("\(score)")
+                    DispatchQueue.main.async {
+                        self.scoreDelegate?.updateScore(score: self.score)
+                        
+                    }
+                    
+                    
+                }
+                
                 node.removeFromParentNode()
             }
         }

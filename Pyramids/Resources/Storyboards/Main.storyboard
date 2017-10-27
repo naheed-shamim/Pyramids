@@ -142,7 +142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="mGameView" destination="EIn-i6-c0P" id="Xx6-5u-TRM"/>
+                        <outlet property="mGameView" destination="EIn-i6-c0P" id="Ebi-Rz-Ekj"/>
                         <outlet property="scoreLbl" destination="bee-9v-wem" id="Ww1-ha-dua"/>
                     </connections>
                 </viewController>
