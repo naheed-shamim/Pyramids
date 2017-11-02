@@ -11,12 +11,12 @@ import SceneKit
 class MainViewController: UIViewController, GameScoreDelegate {
     
     @IBOutlet weak var scoreLbl: UILabel!
+    @IBOutlet weak var livesLbl: UILabel!
     @IBOutlet weak var mGameView: GameView!
     
     override func viewDidLoad()
     {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
         mGameView.scoreDelegate = self
     }
     
@@ -34,8 +34,12 @@ class MainViewController: UIViewController, GameScoreDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func pauseAction(_ sender: Any)
+    @IBAction func pauseAction(_ sender: UIButton)
     {
+        let pauseLbl = sender
+        let buttonTitle = mGameView.isGamePaused ? "Pause" : "Resume"
+        pauseLbl.setTitle(buttonTitle,for: .normal)
+        
         mGameView.pauseGame()
     }
     
@@ -43,8 +47,19 @@ class MainViewController: UIViewController, GameScoreDelegate {
     {
         mGameView.setLevel(level: 2)
     }
+    
     func updateScore(score: Int)
     {
-        scoreLbl.text = "\(score)"
+        DispatchQueue.main.async
+        {
+            self.scoreLbl.text = "\(score)"
+        }
+    }
+    
+    func updateLives(life: Int) {
+        DispatchQueue.main.async
+            {
+                self.livesLbl.text = "\(life)"
+        }
     }
 }

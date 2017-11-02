@@ -13,5 +13,9 @@ import UIKit
 let screenWidth = UIScreen.main.bounds.size.width
 let screenHeight = UIScreen.main.bounds.size.height
 
+let screenCentreX = screenWidth/2
+let screenCentreY = screenHeight/2
+
+
 let hudHieght:CGFloat = 30.0
 

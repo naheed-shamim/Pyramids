@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E4D21BF1FA851600070F338 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D21BE1FA851600070F338 /* Utility.swift */; };
+		4E4D21C11FA854770070F338 /* GameOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D21C01FA854770070F338 /* GameOver.xib */; };
+		4E4D21C31FA855A50070F338 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D21C21FA855A50070F338 /* GameOverView.swift */; };
+		4E4F01EB1FA9E4C600482432 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F01EA1FA9E4C500482432 /* HomeViewController.swift */; };
 		4E67AE2C1FA1DBBB00838A35 /* greenPyramind.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE251FA1DBBB00838A35 /* greenPyramind.png */; };
 		4E67AE2D1FA1DBBB00838A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */; };
 		4E67AE2E1FA1DBBB00838A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E67AE281FA1DBBB00838A35 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E4D21BE1FA851600070F338 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4E4D21C01FA854770070F338 /* GameOver.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameOver.xib; sourceTree = "<group>"; };
+		4E4D21C21FA855A50070F338 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		4E4F01EA1FA9E4C500482432 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E67AE251FA1DBBB00838A35 /* greenPyramind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPyramind.png; sourceTree = "<group>"; };
 		4E67AE271FA1DBBB00838A35 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E67AE281FA1DBBB00838A35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 				4E67AE3B1FA1F2D800838A35 /* ViewController */,
 				4E67AE331FA1F2A500838A35 /* App */,
 				4E7102C61FA30D8E00FE0CE9 /* GameView.swift */,
+				4E4D21C21FA855A50070F338 /* GameOverView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -58,6 +67,7 @@
 				4E67AE2F1FA1DC5900838A35 /* Info.plist */,
 				4E67AE241FA1DBBB00838A35 /* Images */,
 				4E67AE261FA1DBBB00838A35 /* Storyboards */,
+				4E4D21C01FA854770070F338 /* GameOver.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -91,7 +101,9 @@
 		4E67AE3B1FA1F2D800838A35 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4E4D21BE1FA851600070F338 /* Utility.swift */,
 				4E67AE3C1FA1F2D800838A35 /* MainViewController.swift */,
+				4E4F01EA1FA9E4C500482432 /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -187,6 +199,7 @@
 				4E67AE2C1FA1DBBB00838A35 /* greenPyramind.png in Resources */,
 				4E67AE301FA1DC5900838A35 /* Info.plist in Resources */,
 				4E67AE2E1FA1DBBB00838A35 /* Main.storyboard in Resources */,
+				4E4D21C11FA854770070F338 /* GameOver.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,9 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4D21BF1FA851600070F338 /* Utility.swift in Sources */,
 				4E67AE381FA1F2A500838A35 /* AppDelegate.swift in Sources */,
 				4E67AE391FA1F2A500838A35 /* Config.swift in Sources */,
+				4E4D21C31FA855A50070F338 /* GameOverView.swift in Sources */,
 				4E67AE3D1FA1F2D800838A35 /* MainViewController.swift in Sources */,
+				4E4F01EB1FA9E4C600482432 /* HomeViewController.swift in Sources */,
 				4E7102C71FA30D8E00FE0CE9 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
