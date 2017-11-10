@@ -226,48 +226,59 @@ class GameView: SCNView,SCNSceneRendererDelegate
         var yDirection : Float = 0
         var position : Float = 0
         var zCameraPos : Float = 0
+        var yCameraPos : Float = 0
+        
         
         switch self.level
         {
             case 1 :
                         zCameraPos = 10
+                        yCameraPos = 5
                         yDirection = 12
                         position = 0.05
                     break
             case 2 :    zCameraPos = 11
+                        yCameraPos = 5
                         yDirection = 13
                         position = 0.10
                     break
             case 3 :    zCameraPos = 13
+                        yCameraPos = 5
                         yDirection = 14
                         position = 0.15
                     break
             case 4 :    zCameraPos = 14
+                        yCameraPos = 6
                         yDirection = 16
                         position = 0.20
                     break
             case 5 :    zCameraPos = 15
+                        yCameraPos = 6
                         yDirection = 17
                         position = 0.25
                     break
             case 6 :    zCameraPos = 15
+                        yCameraPos = 7
                         yDirection = 18
                         position = 0.25
                     break
             case 7 :    zCameraPos = 15
+                        yCameraPos = 7
                         yDirection = 19
                         position = 0.25
                     break
             case 8 :    zCameraPos = 16
+                        yCameraPos = 8
                         yDirection = 20
                         position = 0.25
                     break
             default :   zCameraPos = 15
+                        yCameraPos = 11
                         yDirection = 25
                         position = 0.15
         }
         
-        cameraNode.position = SCNVector3(x: 0, y: 5, z: zCameraPos)
+        cameraNode.position = SCNVector3(x: 0, y: yCameraPos, z: zCameraPos)
         let randomDirection:Float = arc4random_uniform(2) == 0 ? -1.0 : 1.0
         let force = SCNVector3(x: randomDirection, y: yDirection, z: 0)
         
