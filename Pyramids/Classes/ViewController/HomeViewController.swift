@@ -33,12 +33,13 @@ class HomeViewController: UIViewController {
     @IBAction func showInfoAction(_ sender: Any) {
         self.instructionsView.center = self.view.center
         
-        self.instructionsView.layer.cornerRadius = 4
+        self.instructionsView.layer.cornerRadius = 10
         Utility.showWithZoomAnim(view: self.instructionsView)
         self.view.addSubview(self.instructionsView)
     }
 
     @IBAction func closeInstructions(_ sender: UIButton) {
+        Utility.hideWithZoomAnim(view: self.instructionsView, completion: nil)
         self.instructionsView.removeFromSuperview()
     }
     /*

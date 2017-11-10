@@ -29,6 +29,19 @@ class Utility: NSObject {
         })
     }
     
+    class func hideWithZoomAnim(view:UIView, completion: (Void)?)
+    {
+        view.transform = CGAffineTransform(scaleX: 1,y: 1)
+        
+        UIView.animate(withDuration: 0.2, animations: {
+            view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        },completion:{ _ in
+            if(completion != nil){
+                completion!
+            }
+        })
+    }
+    
     class func showZoomOutIn(view:UIView, scaleFactor:CGFloat)
     {
         view.transform = CGAffineTransform(scaleX: scaleFactor,y: scaleFactor)
