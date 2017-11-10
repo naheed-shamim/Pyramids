@@ -28,4 +28,13 @@ class Utility: NSObject {
             view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
     }
+    
+    class func showZoomOutIn(view:UIView, scaleFactor:CGFloat)
+    {
+        view.transform = CGAffineTransform(scaleX: scaleFactor,y: scaleFactor)
+        
+        UIView.animate(withDuration: 0.4, animations: {
+            view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        })
+    }
 }

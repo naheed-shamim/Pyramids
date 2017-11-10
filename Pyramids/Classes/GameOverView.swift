@@ -23,7 +23,7 @@ class GameOverView: UIView
         backgroundView = UIView(frame: CGRect(x: margin, y: margin, width: viewSize-2*margin, height: viewSize-2*margin))
         
         scoreLabel = UILabel(frame: CGRect(x: (viewSize-margin)/2, y: margin+100, width: 50, height: 21))
-            scoreLabel.text = "0"
+        scoreLabel.text = "0"
         
         super.init(frame: CGRect(x: 0, y: 0, width: viewSize, height: viewSize))
     }

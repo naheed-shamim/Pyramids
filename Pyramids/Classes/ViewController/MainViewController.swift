@@ -53,13 +53,16 @@ class MainViewController: UIViewController, GameScoreDelegate {
         DispatchQueue.main.async
         {
             self.scoreLbl.text = "\(score)"
+            Utility.showZoomOutIn(view: self.scoreLbl, scaleFactor:2.0)
         }
     }
     
     func updateLives(life: Int) {
         DispatchQueue.main.async
-            {
-                self.livesLbl.text = "\(life)"
-        }
+        {
+            self.livesLbl.text = "\(life)"
+            
+            Utility.showZoomOutIn(view: self.livesLbl, scaleFactor: 8.0)
+        }        
     }
 }

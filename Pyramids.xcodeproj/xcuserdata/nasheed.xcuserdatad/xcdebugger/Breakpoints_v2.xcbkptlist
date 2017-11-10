@@ -276,64 +276,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531309755.005531"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "gameOver()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pyramids.GameView.gameOver () -&gt; ()"
-                  moduleName = "Pyramids"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nasheed/Documents/MyXcodeProg/iOS/Swift/Pyramids/Pyramids/Classes/GameView.swift"
-                  timestampString = "531213800.849036"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "170"
-                  endingLineNumber = "170"
-                  offsetFromSymbolStart = "1132">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pyramids.GameView.(gameOver () -&gt; ()).(closure #1)"
-                  moduleName = "Pyramids"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nasheed/Documents/MyXcodeProg/iOS/Swift/Pyramids/Pyramids/Classes/GameView.swift"
-                  timestampString = "531213800.851844"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "170"
-                  endingLineNumber = "170"
-                  offsetFromSymbolStart = "180">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531309755.005531"
+            timestampString = "531989405.901216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "deinit"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -360,12 +312,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531312391.976012"
+            timestampString = "531989405.901216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
-            landmarkName = "renderer(_:updateAtTime:)"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "setTargetCreationTime(time:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -408,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531312391.976012"
+            timestampString = "531989405.901216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "259"
-            endingLineNumber = "259"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "renderer(_:updateAtTime:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -424,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531304853.502005"
+            timestampString = "531989405.901216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "GameView"
             landmarkType = "3">
             <Locations>
@@ -502,12 +454,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pyramids/Classes/GameView.swift"
-            timestampString = "531311728.428103"
+            timestampString = "531989405.901216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "setForceOnNode(node:)"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "createTarget()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

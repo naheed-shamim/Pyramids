@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var instructionsView: UIView!
     @IBOutlet weak var highScore: UILabel!
     
     override func viewDidLoad() {
@@ -29,7 +30,17 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func showInfoAction(_ sender: Any) {
+        self.instructionsView.center = self.view.center
+        
+        self.instructionsView.layer.cornerRadius = 4
+        Utility.showWithZoomAnim(view: self.instructionsView)
+        self.view.addSubview(self.instructionsView)
+    }
 
+    @IBAction func closeInstructions(_ sender: UIButton) {
+        self.instructionsView.removeFromSuperview()
+    }
     /*
     // MARK: - Navigation
 

@@ -25,13 +25,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pyramids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pt-6c-GNi">
-                                <rect key="frame" x="128" y="321" width="119.5" height="25.5"/>
+                                <rect key="frame" x="127.5" y="320.5" width="120" height="26"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenPyramind.png" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-nJ-ZI6">
-                                <rect key="frame" x="87" y="151" width="200" height="120"/>
+                                <rect key="frame" x="87.5" y="150.5" width="200" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="E7F-gM-ZX0"/>
                                     <constraint firstAttribute="width" constant="200" id="fNJ-IV-zks"/>
@@ -51,38 +51,88 @@
                                     <segue destination="GtE-OM-7Cb" kind="presentation" id="ceA-Ys-8Fa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIgh Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZC-XC-ddV">
-                                <rect key="frame" x="112" y="415" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIgh Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZC-XC-ddV">
+                                <rect key="frame" x="129" y="416.5" width="97" height="17"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz7-J4-FSx">
-                                <rect key="frame" x="229" y="415" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz7-J4-FSx">
+                                <rect key="frame" x="244.5" y="416.5" width="10.5" height="17"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnh-do-U2Y">
+                                <rect key="frame" x="325" y="16" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="info.png"/>
+                                <connections>
+                                    <action selector="showInfoAction:" destination="rZG-e1-0Vd" eventType="touchUpInside" id="Aop-lc-2hc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QkP-A3-3gI" firstAttribute="top" secondItem="3pt-6c-GNi" secondAttribute="bottom" constant="150" id="6kD-NJ-lBH"/>
                             <constraint firstItem="QkP-A3-3gI" firstAttribute="centerX" secondItem="pcs-vP-7vM" secondAttribute="centerX" id="7b7-f2-zqG"/>
+                            <constraint firstItem="DZC-XC-ddV" firstAttribute="centerX" secondItem="pcs-vP-7vM" secondAttribute="centerX" constant="-10" id="H6i-hD-19W"/>
                             <constraint firstItem="3pt-6c-GNi" firstAttribute="centerY" secondItem="pcs-vP-7vM" secondAttribute="centerY" id="I3u-js-egn"/>
+                            <constraint firstItem="vz7-J4-FSx" firstAttribute="leading" secondItem="DZC-XC-ddV" secondAttribute="trailing" constant="18.333333333333343" id="MZf-wz-neh"/>
                             <constraint firstItem="3pt-6c-GNi" firstAttribute="top" secondItem="XXX-nJ-ZI6" secondAttribute="bottom" constant="50" id="Na5-Wh-VWo"/>
                             <constraint firstItem="XXX-nJ-ZI6" firstAttribute="centerX" secondItem="pcs-vP-7vM" secondAttribute="centerX" id="Nxp-rS-hlr"/>
+                            <constraint firstItem="vz7-J4-FSx" firstAttribute="centerY" secondItem="DZC-XC-ddV" secondAttribute="centerY" id="WSP-2l-n10"/>
+                            <constraint firstItem="DZC-XC-ddV" firstAttribute="top" secondItem="3pt-6c-GNi" secondAttribute="bottom" constant="70" id="evD-mE-4R8"/>
                             <constraint firstItem="3pt-6c-GNi" firstAttribute="centerX" secondItem="pcs-vP-7vM" secondAttribute="centerX" id="vhW-8L-FFd"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="highScore" destination="vz7-J4-FSx" id="ROh-0n-6NE"/>
+                        <outlet property="instructionsView" destination="Hhg-rN-4Yj" id="gxG-1Q-N6a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikv-hx-FMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Hhg-rN-4Yj">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIm-R8-xuS">
+                            <rect key="frame" x="8" y="8" width="224" height="224"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xpp-EY-cAG">
+                                    <rect key="frame" x="8" y="54" width="208" height="139"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <string key="text">Click on only Green Objects. else you lose score + life. With every 15 seconds the level increases  and lives and levelPoints increase ( MAX 8 )</string>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVr-tq-MT8">
+                                    <rect key="frame" x="49" y="8" width="127" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="22"/>
+                                    <color key="textColor" red="0.0" green="0.77484809029166668" blue="0.1999240451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjt-t3-tin">
+                            <rect key="frame" x="212" y="0.0" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button" image="exit.png"/>
+                            <connections>
+                                <action selector="closeInstructions:" destination="rZG-e1-0Vd" eventType="touchUpInside" id="21P-wg-bKg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="612" y="56.221889055472268"/>
+            <point key="canvasLocation" x="633" y="55"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="iCy-BI-VZx">
@@ -200,6 +250,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="exit.png" width="240" height="240"/>
         <image name="greenPyramind.png" width="1920" height="1080"/>
+        <image name="info.png" width="300" height="300"/>
     </resources>
 </document>
